@@ -1,0 +1,4 @@
+hyperparam_fixed:
+  training:
+    num_train_epochs: 3
+  device: cuda

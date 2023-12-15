@@ -1,0 +1,104 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "0",
+                "include": "0"
+            },
+            "target": {
+                "name": "1",
+                "include": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "0",
+                "include": "0"
+            },
+            "target": {
+                "name": "3",
+                "include": "3"
+            }
+        },
+        {
+            "source": {
+                "name": "1",
+                "include": "1"
+            },
+            "target": {
+                "name": "0",
+                "include": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "1",
+                "include": "1"
+            },
+            "target": {
+                "name": "2",
+                "include": "2"
+            }
+        },
+        {
+            "source": {
+                "name": "1",
+                "include": "1"
+            },
+            "target": {
+                "name": "3",
+                "include": "3"
+            }
+        },
+        {
+            "source": {
+                "name": "1",
+                "include": "1"
+            },
+            "target": {
+                "name": "0",
+                "include": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "3",
+                "include": "3"
+            },
+            "target": {
+                "name": "0",
+                "include": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "0",
+                "include": "0"
+            },
+            "target": {
+                "name": "1",
+                "include": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "2",
+                "include": "2"
+            },
+            "target": {
+                "name": "1",
+                "include": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "3",
+                "include": "3"
+            },
+            "target": {
+                "name": "1",
+                "include": "1"
+            }
+        }
+    ]
+}

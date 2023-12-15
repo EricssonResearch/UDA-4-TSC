@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - optional config: KNNDTW/${stages/preprocess}
+
+classifier_name: KNNDTW
+config: {}
+tune_config:
+  train_tune_option: tune_configs_only

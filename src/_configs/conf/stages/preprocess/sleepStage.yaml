@@ -1,0 +1,9 @@
+dataset_name: sleepStage
+dataset_config:
+  source:
+    name: 16
+  target:
+    name: 1
+preprocessing_pipeline:
+- preprocessor: ToPyArrow
+  config: {}

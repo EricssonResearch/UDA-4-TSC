@@ -1,0 +1,14 @@
+dataset_name: mfd
+dataset_config:
+  source:
+    name: "0"
+    include: "0"
+  target:
+    name: "1"
+    include: "1"
+preprocessing_pipeline:
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

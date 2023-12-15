@@ -1,0 +1,44 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "1"
+            },
+            "target": {
+                "name": "2"
+            }
+        },
+        {
+            "source": {
+                "name": "2"
+            },
+            "target": {
+                "name": "4"
+            }
+        },
+        {
+            "source": {
+                "name": "3"
+            },
+            "target": {
+                "name": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "4"
+            },
+            "target": {
+                "name": "5"
+            }
+        },
+        {
+            "source": {
+                "name": "5"
+            },
+            "target": {
+                "name": "2"
+            }
+        }
+    ]
+}

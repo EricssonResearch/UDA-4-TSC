@@ -1,0 +1,19 @@
+train:
+  classifier_name: VRADA
+  config:
+    backbone:
+      n_input_features: 1
+    device: cuda
+    classifier:
+      num_labels: 2
+    training:
+      n_epochs: 2
+      learning_rate: 0.0003
+      batch_size: 20
+      trade_off: 1
+  tune_config:
+    search_method_name: None
+    train_tune_option: train_configs_only
+predict:
+  load_model:
+    checkpoint: last

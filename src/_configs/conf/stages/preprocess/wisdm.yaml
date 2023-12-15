@@ -1,0 +1,14 @@
+dataset_name: wisdm
+dataset_config:
+  source:
+    name: "1"
+    include: "1"
+  target:
+    name: "2"
+    include: "2"
+preprocessing_pipeline:
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

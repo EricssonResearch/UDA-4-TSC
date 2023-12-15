@@ -1,0 +1,91 @@
+defaults:
+  - _self_
+  - optional tuner_config: CoTMix/${stages/preprocess}
+
+classifier_name: CoTMix
+tuner_config:
+  hyperparam_tuning:
+    backbone:
+      n_mid_channels:
+          sampling_name: choice
+          config:
+            categories:
+              - 32
+              - 64
+              - 128
+      kernel_size:
+          sampling_name: choice
+          config:
+            categories:
+              - 5
+              - 8
+              - 25
+      dropout:
+          sampling_name: choice
+          config:
+            categories:
+              - 0.2
+              - 0.3
+              - 0.5
+      n_out_channels:
+          sampling_name: choice
+          config:
+            categories:
+              - 1
+              - 2
+              - 4
+              - 32
+              - 128
+      avgpool_to:
+          sampling_name: choice
+          config:
+            categories:              
+              - 32
+              - 1
+              - 2
+              - 4
+              - 8
+              - 16
+              - 64
+    classifier:
+      mix_ratio:
+        sampling_name: uniform
+        config:           
+          lower: 0.5
+          upper: 0.99
+      temporal_shift:
+        sampling_name: choice
+        config:
+          categories:
+            - 5
+            - 10
+            - 15
+            - 20
+            - 30
+            - 50
+      beta1:
+        sampling_name: uniform
+        config:
+          lower: 0.1
+          upper: 1.0
+    training:
+      learning_rate:
+        sampling_name: choice
+        config:
+          categories:
+            - 0.001
+            - 0.003
+            - 0.005
+            - 0.007
+  hyperparam_fixed:
+    time_limit: ${global.tune_time_limit}
+    training:
+      per_device_train_batch_size: 32
+      num_train_epochs: ${global.max_tune_epochs}
+      lr_scheduler_type: constant
+      weight_decay: 0.0001
+ray_config:
+  resources_per_trial:
+    gpu: 1
+
+

@@ -1,0 +1,79 @@
+defaults:
+  - _self_
+  - optional tuner_config: InceptionDANN/${stages/preprocess}
+
+classifier_name: InceptionDANN
+tuner_config:
+  hyperparam_tuning:
+    backbone:
+      depth:
+        sampling_name: choice
+        config:
+          categories:
+            - 3
+            - 6
+            - 9
+            - 12
+      kernel_size:
+        sampling_name: choice
+        config:
+          categories:
+            - 8
+            - 16
+            - 32
+            - 40
+            - 64
+      num_kernels:
+        sampling_name: choice
+        config:
+          categories:
+            - 4
+            - 8
+            - 16
+            - 32
+            - 64
+            - 128
+      bottleneck_size:
+        sampling_name: choice
+        config:
+          categories:
+            - 64
+            - 32
+            - 16
+            - 8
+            - 4
+            - 2
+    classifier:
+      class_loss_w:
+        sampling_name: loguniform
+        config:
+          lower: 0.01
+          upper: 10.0
+    training:
+      per_device_train_batch_size:
+        sampling_name: choice
+        config:
+          categories:
+            - 32
+            - 16
+            - 64
+            - 128
+      learning_rate:
+        sampling_name: choice
+        config:
+          categories:
+            - 0.001
+            - 0.01
+            - 0.1
+            - 1.0
+  hyperparam_fixed:
+    max_epochs_lr_scheduler: ${global.dann.max_epochs_lr_scheduler}
+    time_limit: ${global.tune_time_limit}
+    backbone:
+      use_bottleneck: true
+      n_source_dom: 1
+    training:
+      num_train_epochs: ${global.max_tune_epochs}
+ray_config:
+  resources_per_trial:
+    gpu: 1

@@ -1,0 +1,84 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "DK1"
+            },
+            "target": {
+                "name": "FR1"
+            }
+        },
+        {
+            "source": {
+                "name": "FR2"
+            },
+            "target": {
+                "name": "DK1"
+            }
+        },
+        {
+            "source": {
+                "name": "AT1"
+            },
+            "target": {
+                "name": "FR2"
+            }
+        },
+        {
+            "source": {
+                "name": "FR1"
+            },
+            "target": {
+                "name": "AT1"
+            }
+        },
+        {
+            "source": {
+                "name": "FR1"
+            },
+            "target": {
+                "name": "FR2"
+            }
+        },
+        {
+            "source": {
+                "name": "FR1"
+            },
+            "target": {
+                "name": "DK1"
+            }
+        },
+        {
+            "source": {
+                "name": "DK1"
+            },
+            "target": {
+                "name": "FR2"
+            }
+        },
+        {
+            "source": {
+                "name": "FR2"
+            },
+            "target": {
+                "name": "AT1"
+            }
+        },
+        {
+            "source": {
+                "name": "AT1"
+            },
+            "target": {
+                "name": "FR1"
+            }
+        },
+        {
+            "source": {
+                "name": "FR2"
+            },
+            "target": {
+                "name": "FR1"
+            }
+        }
+    ]
+}

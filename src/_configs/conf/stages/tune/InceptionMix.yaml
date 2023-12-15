@@ -1,0 +1,87 @@
+defaults:
+  - _self_
+  - optional tuner_config: InceptionMix/${stages/preprocess}
+
+classifier_name: InceptionMix
+tuner_config:
+  hyperparam_tuning:
+    backbone:
+      depth:
+        sampling_name: choice
+        config:
+          categories:
+            - 3
+            - 6
+            - 9
+            - 12
+      kernel_size:
+        sampling_name: choice
+        config:
+          categories:
+            - 8
+            - 16
+            - 32
+            - 40
+            - 64
+      num_kernels:
+        sampling_name: choice
+        config:
+          categories:
+            - 4
+            - 8
+            - 16
+            - 32
+            - 64
+            - 128
+      bottleneck_size:
+        sampling_name: choice
+        config:
+          categories:
+            - 64
+            - 32
+            - 16
+            - 8
+            - 4
+            - 2
+    classifier:
+      mix_ratio:
+        sampling_name: uniform
+        config:  
+          lower: 0.5
+          upper: 0.99
+      temporal_shift:
+        sampling_name: choice
+        config:
+          categories:
+            - 5
+            - 10
+            - 15
+            - 20
+            - 30
+            - 50
+      beta1:
+        sampling_name: uniform
+        config:
+          lower: 0.1
+          upper: 1.0
+    training:
+      learning_rate:
+        sampling_name: choice
+        config:
+          categories:
+            - 0.001
+            - 0.003
+            - 0.005
+            - 0.007
+  hyperparam_fixed:
+    time_limit: ${global.tune_time_limit}
+    backbone:
+      use_bottleneck: true
+    training:
+      per_device_train_batch_size: 32
+      num_train_epochs: ${global.max_tune_epochs}      
+      lr_scheduler_type: constant
+      weight_decay: 0.0001
+ray_config:
+  resources_per_trial:
+    gpu: 1

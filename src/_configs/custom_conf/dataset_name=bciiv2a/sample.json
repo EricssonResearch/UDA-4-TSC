@@ -1,0 +1,54 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "A01",
+                "include": "A01"
+            },
+            "target": {
+                "name": "A08",
+                "include": "A08"
+            }
+        },
+        {
+            "source": {
+                "name": "A02",
+                "include": "A02"
+            },
+            "target": {
+                "name": "A05",
+                "include": "A05"
+            }
+        },
+        {
+            "source": {
+                "name": "A03",
+                "include": "A03"
+            },
+            "target": {
+                "name": "A01",
+                "include": "A01"
+            }
+        },
+        {
+            "source": {
+                "name": "A06",
+                "include": "A06"
+            },
+            "target": {
+                "name": "A07",
+                "include": "A07"
+            }
+        },
+        {
+            "source": {
+                "name": "A04",
+                "include": "A04"
+            },
+            "target": {
+                "name": "A09",
+                "include": "A09"
+            }
+        }
+    ]
+}

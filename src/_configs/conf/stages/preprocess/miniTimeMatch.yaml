@@ -1,0 +1,16 @@
+dataset_name: miniTimeMatch
+dataset_config:
+  source:
+    name: FR1
+  target:
+    name: FR2
+preprocessing_pipeline:
+- preprocessor: SubSample
+  config:
+    target_length: 39
+- preprocessor: TimeMatchNormalize
+  config:
+    min_value: 0
+    max_value: 65535
+- preprocessor: ToPyArrow
+  config: {}

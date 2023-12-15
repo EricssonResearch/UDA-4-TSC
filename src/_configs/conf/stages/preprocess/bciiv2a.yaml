@@ -1,0 +1,15 @@
+dataset_name: bciiv2a
+dataset_config:
+  source:
+    name: A01
+  target:
+    name: A02
+preprocessing_pipeline:
+- preprocessor: Resampler
+  config:
+    target_length: 350
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

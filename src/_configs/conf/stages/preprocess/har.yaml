@@ -1,0 +1,11 @@
+dataset_name: har
+dataset_config:
+  source:
+    name: 12
+    include: 12
+  target:
+    name: 18
+    include: 18
+preprocessing_pipeline: 
+- preprocessor: ToPyArrow
+  config: {}

@@ -1,0 +1,18 @@
+dataset_name: semg
+dataset_config:
+  source:
+    name: All
+    exclude: 1
+    password: someone
+  target:
+    name: 1
+    password: someone
+preprocessing_pipeline:
+- preprocessor: LabelEncoder
+  config:
+    verbose: true
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

@@ -1,0 +1,5 @@
+train:
+  config:
+    device: cuda
+    training:
+      num_train_epochs: 2

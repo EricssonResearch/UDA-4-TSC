@@ -1,0 +1,14 @@
+tune:
+  random_state: 1
+  search_method_names:
+  - None
+  no_tune: 
+    no_tune: true
+train:
+  classifier_name: RandomForest
+  config:
+    classifier:
+      n_estimators: 10
+  tune_config:
+    search_method_name: None
+    train_tune_option: train_configs_only

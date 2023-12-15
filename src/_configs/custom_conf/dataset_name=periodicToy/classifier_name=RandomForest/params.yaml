@@ -1,0 +1,19 @@
+tune:
+  random_seed: 1
+  search_method_names:
+    - None
+  no_tune: no_tune
+train:
+  config:
+    classifier:
+      n_estimators: 10
+      criterion: log_loss
+  tune_config:
+    search_method_names:
+      - None
+    train_tune_option: train_configs_only
+predict:
+  load_model:
+    checkpoint: best
+    metric_key: accuracy
+    best: maximum

@@ -1,0 +1,7 @@
+tune:
+  random_state: 1
+tune:
+  tuner_config:
+    hyperparam_fixed:
+      backbone:
+        input_len: 500

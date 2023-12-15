@@ -1,0 +1,68 @@
+# random_seed: 1
+# search_method_names:
+#   - None
+# no_tune:
+#   no_tune: true
+
+
+defaults:
+  - _self_
+  - optional tuner_config: SASA/${stages/preprocess}
+
+classifier_name: SASA
+tuner_config:
+  hyperparam_tuning:
+    backbone: 
+      h_dim:
+        sampling_name: choice
+        config:
+          categories:
+            - 16
+            - 32
+            - 64
+            - 128
+    classifier:
+      dense_dim:
+        sampling_name: choice
+        config:
+          categories:
+            - 32
+            - 64
+            - 128
+            - 256
+      drop_prob:
+        sampling_name: choice
+        config:
+          categories:
+            - 0.0
+            - 0.1
+            - 0.2
+            - 0.4
+      window_size: 
+        sampling_name: choice
+        config:
+          categories:
+            - 8
+            - 16
+            - 32
+    training: 
+      learning_rate: 
+        sampling_name: loguniform
+        config:
+          lower: 0.0001
+          upper: 0.1
+  hyperparam_fixed:
+    time_limit: ${global.tune_time_limit}
+    backbone:
+      lstm_layer: 1
+    classifier:
+      coeff: 10.0
+      time_interval: 1
+    training:
+      lr_scheduler_type: constant
+      per_device_train_batch_size: 32
+      num_train_epochs: ${global.max_tune_epochs}
+      weight_decay: 4e-7
+ray_config:
+  resources_per_trial:
+    gpu: 1

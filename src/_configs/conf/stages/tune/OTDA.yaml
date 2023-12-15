@@ -1,0 +1,38 @@
+defaults:
+  - _self_
+  - optional tuner_config: OTDA/${stages/preprocess}
+
+classifier_name: OTDA
+tuner_config:
+  hyperparam_tuning:
+    adaptation:
+      reg_e:
+        sampling_name: loguniform
+        config:
+          lower: 0.001
+          upper: 1000
+      reg_cl:
+        sampling_name: loguniform
+        config:
+          lower: 0.001
+          upper: 1000
+    classifier:
+      n_estimators:
+        sampling_name: choice
+        config:
+          categories:
+          - 10
+          - 30
+          - 50
+          - 100
+          - 150
+          - 200
+          - 300
+          - 500
+  hyperparam_fixed: 
+    classifier:
+      warm_start: True 
+ray_config:
+  resources_per_trial:
+    gpu: 0
+# https://arxiv.org/pdf/1507.00504.pdf for the range

@@ -1,0 +1,11 @@
+dataset_name: moons
+dataset_config:
+  source:
+    name: source
+    random_state: 1
+  target:
+    name: target
+    random_state: 1
+preprocessing_pipeline:
+- preprocessor: ToPyArrow
+  config: {}

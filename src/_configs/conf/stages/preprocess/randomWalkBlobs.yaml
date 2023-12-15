@@ -1,0 +1,32 @@
+dataset_name: randomWalkBlobs
+dataset_config:
+  source:
+    name: source
+    random_state: 0
+    n_samples: 100
+    length: 128
+    n_channels: 1
+    n_classes: 2
+    noise: 1.0
+    lag: 0
+    magnitude: 0.0
+    rotation: 0
+    test_size: 0.3
+    domain_name: source
+  target:
+    name: target
+    random_state: 0
+    n_samples: 100
+    length: 128
+    n_channels: 1
+    n_classes: 2
+    noise: 1.0
+    lag: 0
+    magnitude: 0.0
+    rotation: 0
+    test_size: 0.3
+    znorm: true
+    domain_name: target
+preprocessing_pipeline:
+- preprocessor: ToPyArrow
+  config: {}

@@ -1,0 +1,23 @@
+defaults:
+  - _self_
+  - optional tuner_config: SVM/${stages/preprocess}
+  - optional no_tune: SVM/${stages/preprocess}
+  - optional search_method_names: SVM/${stages/preprocess}
+
+classifier_name: SVM
+tuner_config:
+  hyperparam_tuning:
+    classifier:
+      C:
+        sampling_name: choice
+        config:
+          categories:
+          - 0.1
+          - 1
+          - 10
+  hyperparam_fixed:
+    classifier:
+      probability: true
+ray_config:
+  resources_per_trial:
+    gpu: 0

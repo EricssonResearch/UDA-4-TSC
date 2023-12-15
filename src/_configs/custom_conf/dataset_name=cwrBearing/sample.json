@@ -1,0 +1,84 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "0"
+            },
+            "target": {
+                "name": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "0"
+            },
+            "target": {
+                "name": "3"
+            }
+        },
+        {
+            "source": {
+                "name": "1"
+            },
+            "target": {
+                "name": "3"
+            }
+        },
+        {
+            "source": {
+                "name": "2"
+            },
+            "target": {
+                "name": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "3"
+            },
+            "target": {
+                "name": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "1"
+            },
+            "target": {
+                "name": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "3"
+            },
+            "target": {
+                "name": "0"
+            }
+        },
+        {
+            "source": {
+                "name": "3"
+            },
+            "target": {
+                "name": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "0"
+            },
+            "target": {
+                "name": "2"
+            }
+        },
+        {
+            "source": {
+                "name": "0"
+            },
+            "target": {
+                "name": "3"
+            }
+        }
+    ]
+}

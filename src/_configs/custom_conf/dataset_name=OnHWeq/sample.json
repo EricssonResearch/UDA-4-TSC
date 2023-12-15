@@ -1,0 +1,20 @@
+{
+  "dataset_configs": [
+    {
+      "source": {
+        "name": "OnHW_equations_R"
+      },
+      "target": {
+        "name": "OnHW_equations_L"
+      }
+    },
+    {
+      "source": {
+        "name": "OnHW_equations_L"
+      },
+      "target": {
+        "name": "OnHW_equations_R"
+      }
+    }
+  ]
+}

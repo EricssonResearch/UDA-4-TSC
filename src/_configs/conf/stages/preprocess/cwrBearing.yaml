@@ -1,0 +1,12 @@
+dataset_name: cwrBearing
+dataset_config:
+  source:
+    name: "0"
+  target:
+    name: "1"
+preprocessing_pipeline:
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

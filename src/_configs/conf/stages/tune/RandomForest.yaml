@@ -1,0 +1,20 @@
+defaults:
+  - _self_
+  - optional tuner_config: RandomForest/${stages/preprocess}
+
+classifier_name: RandomForest
+tuner_config:
+  hyperparam_tuning:
+    classifier:
+      n_estimators:
+        sampling_name: choice
+        config:
+          categories:
+          - 10
+          - 100
+  hyperparam_fixed:
+    classifier:
+      criterion: log_loss
+ray_config:
+  resources_per_trial:
+    gpu: 0

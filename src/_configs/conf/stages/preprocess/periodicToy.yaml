@@ -1,0 +1,32 @@
+dataset_name: periodicToy
+dataset_config:
+  source:
+    name: source
+    random_state: 0
+    num_samples_per_class: 100
+    mts_length: 100
+    num_channels: 1
+    num_classes: 2
+    trend: [{}, {}]
+    frequency: [1.0,1.0]
+    noise_std: 2.0
+    amplitude: 10.0
+    test_size: 0.3
+  target:
+    name: target
+    random_state: 1
+    num_samples_per_class: 100
+    mts_length: 100
+    num_channels: 1
+    num_classes: 2 
+    trend: [{}, {}]
+    frequency: [2.0,2.0]
+    noise_std: 2.0
+    amplitude: 10.0
+    test_size: 0.3
+preprocessing_pipeline:
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

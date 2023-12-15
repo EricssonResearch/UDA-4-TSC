@@ -1,0 +1,47 @@
+defaults:
+  - _self_
+  - optional tuner_config: CoDATS/${stages/preprocess}
+
+classifier_name: CoDATS
+tuner_config:
+  hyperparam_tuning:
+    backbone:
+      avgpool_to:
+        sampling_name: choice
+        config:
+          categories:
+            - 1
+            - 2
+            - 4
+            - 8
+            - 16
+            - 32
+    classifier:
+      class_loss_w:
+        sampling_name: loguniform
+        config:
+          lower: 0.01
+          upper: 10.0
+    training:
+      learning_rate:
+        sampling_name: choice
+        config:
+          categories:
+            - 0.0001
+            - 0.001
+            - 0.01
+            - 0.1
+            - 1.0
+  hyperparam_fixed:
+    max_epochs_lr_scheduler: ${global.dann.max_epochs_lr_scheduler}
+    time_limit: ${global.tune_time_limit}
+    backbone:
+      n_source_dom: 1
+    training:
+      per_device_train_batch_size: 128
+      num_train_epochs: ${global.max_tune_epochs}
+ray_config:
+  resources_per_trial:
+    gpu: 1
+
+

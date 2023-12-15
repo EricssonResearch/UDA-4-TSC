@@ -1,0 +1,104 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "subject1",
+                "include": "subject1"
+            },
+            "target": {
+                "name": "subject8",
+                "include": "subject8"
+            }
+        },
+        {
+            "source": {
+                "name": "subject8",
+                "include": "subject8"
+            },
+            "target": {
+                "name": "subject6",
+                "include": "subject6"
+            }
+        },
+        {
+            "source": {
+                "name": "subject2",
+                "include": "subject2"
+            },
+            "target": {
+                "name": "subject7",
+                "include": "subject7"
+            }
+        },
+        {
+            "source": {
+                "name": "subject5",
+                "include": "subject5"
+            },
+            "target": {
+                "name": "subject4",
+                "include": "subject4"
+            }
+        },
+        {
+            "source": {
+                "name": "subject3",
+                "include": "subject3"
+            },
+            "target": {
+                "name": "subject5",
+                "include": "subject5"
+            }
+        },
+        {
+            "source": {
+                "name": "subject8",
+                "include": "subject8"
+            },
+            "target": {
+                "name": "subject1",
+                "include": "subject1"
+            }
+        },
+        {
+            "source": {
+                "name": "subject6",
+                "include": "subject6"
+            },
+            "target": {
+                "name": "subject8",
+                "include": "subject8"
+            }
+        },
+        {
+            "source": {
+                "name": "subject7",
+                "include": "subject7"
+            },
+            "target": {
+                "name": "subject2",
+                "include": "subject2"
+            }
+        },
+        {
+            "source": {
+                "name": "subject4",
+                "include": "subject4"
+            },
+            "target": {
+                "name": "subject5",
+                "include": "subject5"
+            }
+        },
+        {
+            "source": {
+                "name": "subject5",
+                "include": "subject5"
+            },
+            "target": {
+                "name": "subject3",
+                "include": "subject3"
+            }
+        }
+    ]
+}

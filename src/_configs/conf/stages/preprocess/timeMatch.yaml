@@ -1,0 +1,22 @@
+dataset_name: timeMatch
+dataset_config:
+  source:
+    name: FR1
+    sample_perc_parcels: 1.0
+    sample_perc_pixels_per_parcel: 0.01
+    local_data_extracted: /proj/tl-for-ts/users/ehasism/.cache/huggingface/datasets/downloads/extracted/04f48d7088b939cf6184dc37fa34d1195e144ae3aa44f654599e8f0ffa24d354
+  target:
+    name: FR2
+    sample_perc_parcels: 1.0
+    sample_perc_pixels_per_parcel: 0.01
+    local_data_extracted: /proj/tl-for-ts/users/ehasism/.cache/huggingface/datasets/downloads/extracted/04f48d7088b939cf6184dc37fa34d1195e144ae3aa44f654599e8f0ffa24d354
+preprocessing_pipeline:
+- preprocessor: SubSample
+  config:
+    target_length: 39
+- preprocessor: TimeMatchNormalize
+  config:
+    min_value: 0
+    max_value: 65535
+- preprocessor: ToPyArrow
+  config: {}

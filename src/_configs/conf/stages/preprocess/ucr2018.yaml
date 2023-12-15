@@ -1,0 +1,20 @@
+dataset_name: ucr2018
+dataset_config:
+  source:
+    name: FordA
+    password: someone
+  target:
+    name: FordB
+    password: someone
+preprocessing_pipeline:
+- preprocessor: LabelEncoder
+  config:
+    verbose: true
+- preprocessor: DatasetSampler
+  config:
+    sample_size: 0.1
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

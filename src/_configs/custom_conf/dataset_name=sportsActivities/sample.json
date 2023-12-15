@@ -1,0 +1,104 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "p1",
+                "include": "p1"
+            },
+            "target": {
+                "name": "p8",
+                "include": "p8"
+            }
+        },
+        {
+            "source": {
+                "name": "p7",
+                "include": "p7"
+            },
+            "target": {
+                "name": "p3",
+                "include": "p3"
+            }
+        },
+        {
+            "source": {
+                "name": "p4",
+                "include": "p4"
+            },
+            "target": {
+                "name": "p2",
+                "include": "p2"
+            }
+        },
+        {
+            "source": {
+                "name": "p5",
+                "include": "p5"
+            },
+            "target": {
+                "name": "p6",
+                "include": "p6"
+            }
+        },
+        {
+            "source": {
+                "name": "p5",
+                "include": "p5"
+            },
+            "target": {
+                "name": "p4",
+                "include": "p4"
+            }
+        },
+        {
+            "source": {
+                "name": "p8",
+                "include": "p8"
+            },
+            "target": {
+                "name": "p1",
+                "include": "p1"
+            }
+        },
+        {
+            "source": {
+                "name": "p3",
+                "include": "p3"
+            },
+            "target": {
+                "name": "p7",
+                "include": "p7"
+            }
+        },
+        {
+            "source": {
+                "name": "p2",
+                "include": "p2"
+            },
+            "target": {
+                "name": "p4",
+                "include": "p4"
+            }
+        },
+        {
+            "source": {
+                "name": "p6",
+                "include": "p6"
+            },
+            "target": {
+                "name": "p5",
+                "include": "p5"
+            }
+        },
+        {
+            "source": {
+                "name": "p4",
+                "include": "p4"
+            },
+            "target": {
+                "name": "p5",
+                "include": "p5"
+            }
+        }
+    ]
+}

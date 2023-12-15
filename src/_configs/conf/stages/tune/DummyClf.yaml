@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - optional tuner_config: DummyClf/${stages/preprocess}
+
+classifier_name: DummyClf
+tuner_config:
+  hyperparam_tuning:
+    classifier:
+      strategy:
+        sampling_name: choice
+        config:
+          categories:
+          - most_frequent
+          - prior
+  hyperparam_fixed:
+    sleep: 1

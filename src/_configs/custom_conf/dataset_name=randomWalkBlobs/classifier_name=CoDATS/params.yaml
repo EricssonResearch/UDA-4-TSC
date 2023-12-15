@@ -1,0 +1,29 @@
+tune:
+  random_seed: 1
+  search_method_names:
+    - None
+  no_tune:
+    no_tune: true
+train:
+  config:
+    save_every_epoch: 50
+    backbone:
+      n_input_channels: 1
+      n_source_dom: 1
+    classifier:
+      num_labels: 2
+      tradeoff: 1.0
+      avgpool_to: 32
+    training:
+      num_train_epochs: 100
+      lr_scheduler_type : constant
+      per_device_train_batch_size: 32
+  tune_config:
+    search_method_names:
+      - None
+    train_tune_option: train_configs_only
+predict:
+  load_model:
+    checkpoint: best
+    metric_key: accuracy
+    best: maximum

@@ -1,0 +1,104 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "16",
+                "include": "16"
+            },
+            "target": {
+                "name": "1",
+                "include": "1"
+            }
+        },
+        {
+            "source": {
+                "name": "9",
+                "include": "9"
+            },
+            "target": {
+                "name": "14",
+                "include": "14"
+            }
+        },
+        {
+            "source": {
+                "name": "12",
+                "include": "12"
+            },
+            "target": {
+                "name": "5",
+                "include": "5"
+            }
+        },
+        {
+            "source": {
+                "name": "7",
+                "include": "7"
+            },
+            "target": {
+                "name": "18",
+                "include": "18"
+            }
+        },
+        {
+            "source": {
+                "name": "0",
+                "include": "0"
+            },
+            "target": {
+                "name": "11",
+                "include": "11"
+            }
+        },
+        {
+            "source": {
+                "name": "1",
+                "include": "1"
+            },
+            "target": {
+                "name": "16",
+                "include": "16"
+            }
+        },
+        {
+            "source": {
+                "name": "14",
+                "include": "14"
+            },
+            "target": {
+                "name": "9",
+                "include": "9"
+            }
+        },
+        {
+            "source": {
+                "name": "5",
+                "include": "5"
+            },
+            "target": {
+                "name": "12",
+                "include": "12"
+            }
+        },
+        {
+            "source": {
+                "name": "18",
+                "include": "18"
+            },
+            "target": {
+                "name": "7",
+                "include": "7"
+            }
+        },
+        {
+            "source": {
+                "name": "11",
+                "include": "11"
+            },
+            "target": {
+                "name": "0",
+                "include": "0"
+            }
+        }
+    ]
+}

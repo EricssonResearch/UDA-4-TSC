@@ -1,0 +1,21 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "young"
+            },
+            "target": {
+                "name": "old"
+            }
+        },
+
+        {
+            "source": {
+                "name": "old"
+            },
+            "target": {
+                "name": "young"
+            }
+        }
+    ]
+}

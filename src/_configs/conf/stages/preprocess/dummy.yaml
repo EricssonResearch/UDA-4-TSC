@@ -1,0 +1,18 @@
+dataset_name: dummy
+dataset_config:
+  source:
+    name: source
+    random_state: 1
+    n_channels: 1
+    n_classes: 3
+  target:
+    name: target
+    random_state: 2
+    n_channels: 1
+    n_classes: 3
+preprocessing_pipeline:
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

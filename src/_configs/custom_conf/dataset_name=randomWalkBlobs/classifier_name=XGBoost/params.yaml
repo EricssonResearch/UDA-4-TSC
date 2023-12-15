@@ -1,0 +1,15 @@
+tune:
+  random_seed: 1
+  search_method_names:
+    - None
+  no_tune:
+    no_tune: true
+train:
+  config:
+    classifier:
+      n_estimators: 100
+      eval_metric: logloss
+      use_label_encoder: false
+  tune_config:
+    search_method_name: None
+    train_tune_option: train_configs_only

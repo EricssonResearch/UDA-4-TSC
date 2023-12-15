@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - optional config: RandomForest/${stages/preprocess}
+
+classifier_name: RandomForest
+config: {}
+tune_config:
+  train_tune_option: tune_configs_only

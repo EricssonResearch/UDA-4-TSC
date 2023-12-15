@@ -1,0 +1,19 @@
+dataset_name: OnHWeq
+dataset_config:
+  source:
+    name: OnHW_equations_R
+  target:
+    name: OnHW_equations_L
+preprocessing_pipeline:
+- preprocessor: LabelEncoder
+  config:
+    verbose: true
+- preprocessor: Interpolate
+  config:
+    verbose: true
+    interpolate_to: 64 # This is the value used in 'Domain Adaptation for Time-Series Classification to Mitigate Covariate Shift'
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

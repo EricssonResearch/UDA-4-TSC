@@ -1,0 +1,6 @@
+defaults:
+  - defaultNN
+  - _self_
+  - optional config: InceptionCDAN/${stages/preprocess}
+
+classifier_name: InceptionCDAN

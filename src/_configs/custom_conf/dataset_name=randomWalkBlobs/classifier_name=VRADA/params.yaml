@@ -1,0 +1,18 @@
+tune:
+  random_seed: 1
+  search_method_names:
+    - None
+  no_tune:
+    no_tune: true
+train:
+  config:
+    backbone:
+      n_input_features: 1
+    classifier:
+      n_labels: 2
+    training:
+      num_train_epochs: 50
+  tune_config:
+    search_method_names:
+      - None
+    train_tune_option: train_configs_only

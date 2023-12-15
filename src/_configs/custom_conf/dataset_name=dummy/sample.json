@@ -1,0 +1,24 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "source1",
+                "random_state": 1
+            },
+            "target": {
+                "name": "target1",
+                "random_state": 1
+            }
+        },
+        {
+            "source": {
+                "name": "source1",
+                "random_state": 1
+            },
+            "target": {
+                "name": "target2",
+                "random_state": 2
+            }
+        }
+    ]
+}

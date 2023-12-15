@@ -1,0 +1,6 @@
+defaults:
+  - defaultNN
+  - _self_
+  - optional config: Raincoat/${stages/preprocess}
+
+classifier_name: Raincoat

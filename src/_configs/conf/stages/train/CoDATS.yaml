@@ -1,0 +1,6 @@
+defaults:
+  - defaultNN
+  - _self_
+  - optional config: CoDATS/${stages/preprocess}
+
+classifier_name: CoDATS

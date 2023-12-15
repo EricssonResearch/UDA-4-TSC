@@ -1,0 +1,1154 @@
+{
+	"dataset_configs": [
+		{
+			"source": {
+				"name": "source_x_1.0_freq_0.1_16",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w1": 1.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x_1.0_freq_0.1_16",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w1": 1.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_1.0_freq_0.1_16",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w1": 1.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x_0.0_freq_0.1_16",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 0.0
+					},
+					{
+						"w1": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_1.0_freq_0.1_16",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w1": 1.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x_-1.0_freq_0.1_16",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": -1.0
+					},
+					{
+						"w1": -1.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_0.1",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_0.2",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.25,
+					0.25
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_0.5",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.5,
+					0.5
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_1.0",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					1.0,
+					1.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_2.0",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					2.0,
+					2.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_4.0",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					4.0,
+					4.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_8.0",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					8.0,
+					8.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_same_freq_0.1",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x2_same_freq_16.0",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					16.0,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_0.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_5.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -70.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -70.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_10.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -65.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -65.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_15.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -60.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -60.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_20.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -55.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_25.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -50.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -50.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_30.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -45.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_35.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -40.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -40.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_40.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -35.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -35.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_45.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -30.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -30.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x2_0.0_freq_0.1_16",
+				"random_state": 0,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -75.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			},
+			"target": {
+				"name": "target_x2_50.0_freq_0.1_16",
+				"random_state": 1,
+				"amplitude": 15.0,
+				"trend": [
+					{
+						"w2": 0.01,
+						"o2": -25.0
+					},
+					{
+						"w2": 0.01,
+						"o2": -25.0
+					}
+				],
+				"frequency": [
+					0.125,
+					16.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_0.1",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_0.2",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.25,
+					0.25
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_0.5",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.5,
+					0.5
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_1.0",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					1.0,
+					1.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_2.0",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					2.0,
+					2.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_4.0",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					4.0,
+					4.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_8.0",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					8.0,
+					8.0
+				]
+			}
+		},
+		{
+			"source": {
+				"name": "source_x_x2_same_freq_0.1",
+				"random_state": 0,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					0.125,
+					0.125
+				]
+			},
+			"target": {
+				"name": "target_x_x2_same_freq_16.0",
+				"random_state": 1,
+				"trend": [
+					{
+						"w1": 1.0
+					},
+					{
+						"w2": 0.01,
+						"o2": 0.0
+					}
+				],
+				"frequency": [
+					16.0,
+					16.0
+				]
+			}
+		}
+	]
+}

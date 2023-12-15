@@ -1,0 +1,19 @@
+dataset_name: OnHWchar
+dataset_config:
+  source:
+    name: onhw2_both_indep_0
+  target:
+    name: OnHW_chars_L
+preprocessing_pipeline:
+- preprocessor: LabelEncoder
+  config:
+    verbose: true
+- preprocessor: Interpolate
+  config:
+    verbose: true
+    interpolate_to: 64 # This is the value used in 'Domain Adaptation for Time-Series Classification to Mitigate Covariate Shift'
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

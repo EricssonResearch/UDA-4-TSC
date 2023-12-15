@@ -1,0 +1,6 @@
+defaults:
+  - defaultNN
+  - _self_
+  - optional config: InceptionSASA/${stages/preprocess}
+
+classifier_name: InceptionSASA

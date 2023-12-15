@@ -1,0 +1,65 @@
+global: # global vars special for neural nets
+  # checkpoints [1, 2, 3, 5, 7, 12, 19, 30, 49, 79, 128, 207, 336, 546, 886, 1439, 2336, 3793, 6159, 10000]
+  max_train_epochs: 10000 # maximum number of epochs during train stage
+  max_tune_epochs: 128 # maximum number of epochs during tune stage
+  tune_time_limit: 1080 # in seconds maximum time allowed for training  neural nets during tune stage 
+  train_time_limit: 7200 # in seconds maximum time allowed for training neural nets during train stage
+  dann: # vars special for dann based models
+    max_epochs_lr_scheduler: 1439
+  
+defaults:
+  - _self_
+  - stages/train: Inception # these will be overriden with command line 
+  - stages/tune: ${stages/train} # these will be overriden with command line 
+  - stages/preprocess: dummy # these will be overriden with command line 
+  - stages/predict: default
+  - stages/score: default
+stages:
+  preprocess:
+    random_seed: 1
+  tune:
+    search_method_names: # the list of techniques used for searching the hparams during domain adaptation
+    - Reweight_5 # Will compute the accuracy where each example is reweighted by the ratio between the estimated source and target distribution (5 gaussian) 
+    - TransportedSource # will search based on the evaluation on labeled source data (lower bound)
+    - TransportedTarget # will search based on the evaluation on labeled target data (upper bound)
+    # - Reverse # Will generate pseudo labels for the target after training on labeled source data and then re-train on target using the pseudo labels
+    random_seed: 1
+    ray_config:
+      resources_per_trial:
+        cpu: 2 # one cpu for each ray job
+      name: ray # name of the job 
+      num_samples: 1000 # how many samples to take from the search space of hparams : -1 means infinity
+      verbose: 3 # level of verbose 
+      log_to_file: true # log to file 
+      raise_on_failed_trial: false # do not raise error if one trial fails 
+      resume: TBD # Should be defined either via hydra cmd line either: AUTO|false
+      time_budget: 6 # limit hours by default for all ray jobs launched (total time) - unlike TimeoutStopper takes into account the number of workers 
+      local_dir: null # no local directory 
+      fail_fast: false # will fail if the first trial gives an error in ray
+      max_concurrent_trials: 9 # maximum number of concurrent trial that can be run (here num_workers * 2 + 1)
+    tuner_config:
+      address: auto # null -> run locally || auto -> run on cluster  
+      model_selection: # how to split the validation set from the training set for evaluation of generalization
+        name: NoShuffleSplit
+        config:
+          n_splits: 1
+          test_size: 0.1
+  train:
+    no_shuffle_split_config: # split or not a validation set for evaluation during training (usually useful for neural networks to do early stopping e.g.)
+      n_splits: 0 # either 0 no validation set (train set will be used) or 1 a new split be used for validation
+      test_size: 0.0
+    tune_config:
+      search_method_name: None # this will be filled with the search method defined in tune stage 
+      train_tune_option: train_configs_only # explained more in README
+      metric_key: null # the metric key to be used when choosing the best set of hparams, null means default metric for each tune method will be used
+    random_seed: 1
+  predict:
+    load_model: {}
+    random_seed: 1
+  score:
+    random_seed: 1
+utils:
+  generate_dvc_pipeline: false # whether or not to generate the dvc pipeline
+  force: True # Whether to force regenerate the dvc pipeline
+  localParams: params.json # usually we keep this value for the default generated params.json
+  idxExperiment: 0 # idx of the experiment to be taken from _configs/custom_conf/dataset_name=[]/sample.json 

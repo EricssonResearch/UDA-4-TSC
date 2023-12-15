@@ -1,0 +1,8 @@
+tune:
+  tuner_config:
+    hyperparam_fixed:
+      backbone:
+        mts_length: 128
+        input_channels: 1
+      classifier:
+        num_labels: 2

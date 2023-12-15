@@ -1,0 +1,10 @@
+config:
+  time_limit: ${global.train_time_limit}
+  do_checkpoint: true
+  training:
+    num_train_epochs: ${global.max_train_epochs}
+tune_config:
+  train_tune_option: train_overrides_tune
+no_shuffle_split_config:
+  n_splits: 1
+  test_size: 0.1

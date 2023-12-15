@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+  - optional config: SVM/${stages/preprocess}
+  - optional tune_config: SVM/${stages/preprocess}
+
+classifier_name: SVM
+config:
+  classifier:
+    decision_function_shape: ovr
+    random_state: 1
+tune_config:
+  train_tune_option: train_union_tune

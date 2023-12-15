@@ -1,0 +1,6 @@
+defaults:
+  - defaultNN
+  - _self_
+  - optional config: InceptionDANN/${stages/preprocess}
+
+classifier_name: InceptionDANN

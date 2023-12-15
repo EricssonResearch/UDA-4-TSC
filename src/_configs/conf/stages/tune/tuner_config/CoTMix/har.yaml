@@ -1,0 +1,52 @@
+### for reproduce of cotmix on har
+# preprocess:
+#   dataset_config:
+#     source:
+#       test_size: 0.3
+#     target:
+#       test_size: 0.3
+#   random_seed: null
+# tune:
+#   random_seed: 1
+#   search_method_names:
+#     - None
+#   no_tune:
+#      no_tune: true
+# train:
+#   random_seed: null
+#   tune_config:
+#     train_tune_option: train_configs_only
+#   no_shuffle_split_config: 
+#     n_splits: 0
+#     test_size: 0.0
+#   config:
+#     device: cuda
+#     backbone:
+#       n_input_channels: 9
+#       kernel_size: 5
+#       dropout: 0.5
+#       n_mid_channels: 64
+#       n_out_channels: 128
+#       avgpool_to: 1
+#     training:
+#       dataloader_drop_last: true
+#       per_device_train_batch_size: 32
+#       per_device_eval_batch_size: 32
+#       num_train_epochs: 40
+#       save_strategy: steps
+#       logging_strategy: epoch
+#       evaluation_strategy: steps
+#       lr_scheduler_type: constant
+#       weight_decay: 0.0001
+#       learning_rate: 0.001
+#     classifier:
+#       num_labels: 6
+#       beta1: 0.78
+#       temporal_shift: 14
+#       mix_ratio: 0.9
+# predict:
+#   random_seed: null
+#   load_model:
+#     checkpoint: last
+# score:
+#   random_seed: null

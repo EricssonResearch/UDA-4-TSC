@@ -1,0 +1,17 @@
+dataset_name: hhar
+dataset_config:
+  source:
+    name: a
+    include: a
+  target:
+    name: b
+    include: b
+preprocessing_pipeline:
+- preprocessor: FillNaN
+  config:
+    value: mean
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

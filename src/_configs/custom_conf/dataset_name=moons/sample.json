@@ -1,0 +1,164 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_10",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 10,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_20",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 20,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_30",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 30,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_40",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 40,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_50",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 50,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_60",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 60,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_70",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 70,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_80",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 80,
+                "noise": 0.05
+            }
+        },
+        {
+            "source": {
+                "name": "source_0",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 0,
+                "noise": 0.05
+            },
+            "target": {
+                "name": "target_90",
+                "random_state": 22,
+                "n_samples": 1000,
+                "theta": 90,
+                "noise": 0.05
+            }
+        }
+    ]
+}

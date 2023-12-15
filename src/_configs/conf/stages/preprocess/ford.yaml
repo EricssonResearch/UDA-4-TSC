@@ -1,0 +1,17 @@
+dataset_name: ford
+dataset_config:
+  source:
+    name: FordA
+    password: someone
+  target:
+    name: FordB
+    password: someone
+preprocessing_pipeline:
+- preprocessor: LabelEncoder
+  config:
+    verbose: true
+- preprocessor: ZNormalizer
+  config:
+    verbose: true
+- preprocessor: ToPyArrow
+  config: {}

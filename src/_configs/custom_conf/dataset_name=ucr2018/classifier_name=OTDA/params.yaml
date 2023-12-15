@@ -1,0 +1,67 @@
+tune:
+  classifier_name: OTDA
+  search_method_names:
+  - TransportedSource
+  tuner_config:
+    hyperparam_tuning:
+      adaptation:
+        reg_e:
+          sampling_name: loguniform
+          config:
+            lower: 0.001
+            upper: 10
+        reg_cl:
+          sampling_name: loguniform
+          config:
+            lower: 0.001
+            upper: 10
+        norm:
+          sampling_name: choice
+          config:
+            categories:
+            - median
+        max_iter:
+          sampling_name: choice
+          config:
+            categories:
+            - 10
+        max_inner_iter:
+          sampling_name: choice
+          config:
+            categories:
+            - 100
+        metric:
+          sampling_name: choice
+          config:
+            categories:
+            - sqeuclidean
+      classifier:
+        n_estimators:
+          sampling_name: choice
+          config:
+            categories:
+            - 10
+    hyperparam_fixed: {}
+  ray_config:
+    time_budget: 1
+    resources_per_trial:
+      cpu: 1
+    name: ray
+    num_samples: 2
+train:
+  classifier_name: OTDA
+  config:
+    adaptation:
+      reg_e: 1
+      reg_cl: 0.1
+      norm: median
+      max_iter: 10
+      max_inner_iter: 200
+      log: false
+      tol: 1.0e-06
+      metric: sqeuclidean
+    classifier:
+      n_estimators: 10
+  tune_config:
+    train_tune_option: tune_overrides_train
+    metric_key: accuracy

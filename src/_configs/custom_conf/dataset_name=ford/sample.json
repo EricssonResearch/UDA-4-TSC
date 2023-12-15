@@ -1,0 +1,20 @@
+{
+    "dataset_configs": [
+        {
+            "source": {
+                "name": "FordA"
+            },
+            "target": {
+                "name": "FordB"
+            }
+        },
+        {
+            "source": {
+                "name": "FordB"
+            },
+            "target": {
+                "name": "FordA"
+            }
+        }
+    ]
+}
