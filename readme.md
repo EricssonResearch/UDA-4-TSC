@@ -52,4 +52,4 @@ docker run --name uda-4-tsc --network host --entrypoint bash -idt -v /path/to/cl
 
 Now you have the necessary env to run the code.
 
-Alternatively you can use the already published docker image on docker hub: TODO
+Alternatively you can use the already published docker image on docker hub:  TODO
