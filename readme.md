@@ -8,7 +8,7 @@ For contributing follow the `contribution.md` guide.
 
 ## Requirements
 
-Make sure you have an env with `python>=3.10` and run the following: 
+Make sure you have an env with `python==3.10` and run the following: 
 
 ```
 pip install -r requirements.txt 
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Run
 
-Make sure you are inside `src/` nad to run a short pipeline of `CoDATS` model on `har` dataset with `source=12` and `target=16` follow the two commands:
+Make sure you are inside `src/`, then to run a short pipeline of `CoDATS` model on `har` dataset with `source=12` and `target=16` follow the two commands:
 
 ### Generate the config with hydra
 
