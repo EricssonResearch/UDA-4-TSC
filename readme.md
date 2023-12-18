@@ -9,7 +9,9 @@ This work was conducted by the <img src="figures/logo.png" alt="logo" width="23"
 
 ## Contributions 
 
-For contributing follow the `contribution.md` guide.
+We welcome contributions to our benchmark. 
+
+For contributing, please follow the [`contribution.md`](`contribution.md`) guide.
 
 ## Requirements
 
