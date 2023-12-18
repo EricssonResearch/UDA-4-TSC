@@ -11,7 +11,7 @@ This work was conducted by the <img src="figures/logo.png" alt="logo" width="23"
 
 We welcome contributions to our benchmark. 
 
-For contributing, please follow the [https://github.com/EricssonResearch/UDA-4-TSC/blob/main/contribution.md](`contribution.md`) guide.
+For contributing, please follow the [`contribution.md`](contribution.md) guide.
 
 ## Requirements
 
