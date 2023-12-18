@@ -2,7 +2,7 @@
 
 This repository contains the official implementation of the benchmark titled "Deep Unsupervised Domain Adaptation for Time Series Classification: a Benchmark" available on [ArXiv](https://arxiv.org/abs/2312.09857).
  
- This work was conducted by the <img src="figures/logo.png" alt="logo" width="23"/> team at Ericsson Research in France as part of the open source initiative.
+This work was conducted by the <img src="figures/logo.png" alt="logo" width="23"/> team at Ericsson Research in France as part of the open source initiative.
 
 ![avg rank](/figures/results-avg-rank.PNG)
 *Average rank diagrams, using accuracy on all tested algorithms and hyperparameter tuning methods. The different colors specify the employed hyperparameter tuning method: green for <span style="color:lightgreen">IWCV</span>, blue for <span style="color:deepskyblue">Source Risk</span> and red for <span style="color:red">Target Risk</span>.*
@@ -83,9 +83,7 @@ If you re-use this work, please cite:
 We would like to express our sincere gratitude to all individuals managing the AILAB Server within the Ericsson Re-
 search department. Their support and assistance have been invaluable for the completion of this research experiments.
 
-A special acknowledgment is extended to the IRISA team at Rennes University for their collaborative spirit and the
-resources they shared. Furthermore, we deeply appreciate their critical review and constructive feedback on earlier
-drafts of our work, which significantly enhanced the clarity and coherence of our findings.
+A special acknowledgment is extended to Laetitia Chapel, Charlotte Pelletier and Romain Tavenard from the IRISA research institute, for their collaborative spirit and the resources they shared with us. Furthermore, we deeply appreciate their critical review and constructive feedback on earlier drafts of our work, which significantly enhanced the clarity and coherence of our findings.
 
 ## License
 
