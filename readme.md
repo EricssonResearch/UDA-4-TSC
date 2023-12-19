@@ -87,6 +87,9 @@ search department. Their support and assistance have been invaluable for the com
 
 A special acknowledgment is extended to Laetitia Chapel, Charlotte Pelletier and Romain Tavenard from the IRISA research institute, for their collaborative spirit and the resources they shared with us. Furthermore, we deeply appreciate their critical review and constructive feedback on earlier drafts of our work, which significantly enhanced the clarity and coherence of our findings.
 
+Finally, we would also like to express our sincere gratitude to the researchers who collected, cleaned, and curated the datasets used in this benchmark. 
+Their invaluable contribution forms the foundation of our study, and we appreciate their efforts in providing these datasets for free.
+
 ## License
 
 This work is distributed under the [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/).
